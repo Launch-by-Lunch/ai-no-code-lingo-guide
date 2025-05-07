@@ -120,6 +120,13 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ["No-Code", "Rapid Application Development", "LCAP"]
   },
   {
+    id: "mcl",
+    term: "MCL (Modular Component Library)",
+    definition: "A collection of pre-built, reusable software components that can be assembled and configured with minimal coding to create applications in low-code development environments.",
+    category: "low-code",
+    relatedTerms: ["Components", "UI Library", "Design System"]
+  },
+  {
     id: "lcap",
     term: "Low-Code Application Platform (LCAP)",
     definition: "A platform that provides a development environment used to create application software through graphical user interfaces instead of traditional hand-coded programming.",
