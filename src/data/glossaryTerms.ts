@@ -59,6 +59,20 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "ai",
     relatedTerms: ["Diffusion Models", "GANs", "Text-to-Image"]
   },
+  {
+    id: "ai-agents",
+    term: "AI Agents",
+    definition: "Autonomous AI systems designed to perceive their environment, make decisions, and take actions to achieve specific goals without human intervention.",
+    category: "ai",
+    relatedTerms: ["Autonomous Systems", "Intelligent Agents", "Multi-agent Systems"]
+  },
+  {
+    id: "mcp",
+    term: "Model Context Protocol",
+    definition: "A standardized protocol for communication between different AI systems, defining how context, instructions, and data are exchanged between models.",
+    category: "ai",
+    relatedTerms: ["AI Interoperability", "Prompt Engineering", "Context Window"]
+  },
   
   // No-Code Terminology
   {
@@ -167,5 +181,21 @@ export const glossaryTerms: GlossaryTerm[] = [
     definition: "The continuous process of managing an application through its lifecycle, from planning and design to testing, deployment, and maintenance.",
     category: "low-code",
     relatedTerms: ["DevOps", "CI/CD", "Versioning"]
+  },
+  
+  // Additional Terms
+  {
+    id: "api",
+    term: "API (Application Programming Interface)",
+    definition: "A set of rules and protocols that allows different software applications to communicate with each other, enabling the exchange of data and functionality between systems.",
+    category: "low-code",
+    relatedTerms: ["REST API", "GraphQL", "Endpoints", "API Gateway"]
+  },
+  {
+    id: "supabase",
+    term: "Supabase",
+    definition: "An open-source Firebase alternative providing all the backend services needed to build a product: authentication, database, storage, and serverless functions.",
+    category: "low-code",
+    relatedTerms: ["PostgreSQL", "Authentication", "Database", "Backend as a Service"]
   }
 ];
