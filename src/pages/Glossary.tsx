@@ -1,42 +1,59 @@
 
-import React, { useState, useMemo } from 'react';
-import GlossaryHeader from '@/components/GlossaryHeader';
-import GlossaryCard from '@/components/GlossaryCard';
+import React, { useState, useEffect } from 'react';
 import { glossaryTerms } from '@/data/glossaryTerms';
+import GlossaryCard from '@/components/GlossaryCard';
+import GlossaryHeader from '@/components/GlossaryHeader';
+import { Link } from 'react-router-dom';
 
-const GlossaryPage: React.FC = () => {
+const GlossaryPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('all');
+  const [filteredTerms, setFilteredTerms] = useState(glossaryTerms);
 
-  const filteredTerms = useMemo(() => {
-    return glossaryTerms.filter(term => {
-      // Filter by category
-      const categoryMatch = 
-        activeCategory === 'all' || 
-        term.category === activeCategory;
-      
-      // Filter by search term
-      const searchMatch = 
-        !searchTerm ||
-        term.term.toLowerCase().includes(searchTerm.toLowerCase()) || 
-        term.definition.toLowerCase().includes(searchTerm.toLowerCase());
-      
-      return categoryMatch && searchMatch;
-    });
+  useEffect(() => {
+    let filtered = glossaryTerms;
+    
+    // Apply category filter if not 'all'
+    if (activeCategory !== 'all') {
+      filtered = filtered.filter(term => term.category === activeCategory);
+    }
+    
+    // Apply search filter if search term exists
+    if (searchTerm) {
+      const searchLower = searchTerm.toLowerCase();
+      filtered = filtered.filter(term => 
+        term.term.toLowerCase().includes(searchLower) || 
+        term.definition.toLowerCase().includes(searchLower)
+      );
+    }
+    
+    setFilteredTerms(filtered);
   }, [searchTerm, activeCategory]);
 
   return (
-    <div className="container py-8 px-4 md:py-12 md:px-6 max-w-7xl mx-auto">
+    <div className="container mx-auto px-4 py-8 max-w-6xl">
+      <div className="mb-8 flex justify-center">
+        <Link to="/">
+          <img 
+            src="/lovable-uploads/38d17c59-b7d9-4b4a-af26-62fb2538fb77.png" 
+            alt="Launch By Lunch Logo" 
+            className="h-28"
+          />
+        </Link>
+      </div>
+      
       <GlossaryHeader 
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
       />
-
+      
       {filteredTerms.length === 0 ? (
         <div className="text-center py-16">
-          <p className="text-lg text-muted-foreground">No matching terms found. Try adjusting your search.</p>
+          <p className="text-xl text-muted-foreground">
+            No terms found matching your search. Try a different keyword or category.
+          </p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -45,10 +62,6 @@ const GlossaryPage: React.FC = () => {
           ))}
         </div>
       )}
-
-      <footer className="mt-16 text-center text-sm text-muted-foreground">
-        <p>This glossary is continuously updated with new industry terms.</p>
-      </footer>
     </div>
   );
 };
