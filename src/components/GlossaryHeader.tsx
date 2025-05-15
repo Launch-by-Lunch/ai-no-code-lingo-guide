@@ -20,7 +20,7 @@ const GlossaryHeader: React.FC<GlossaryHeaderProps> = ({
     <div className="mb-8 space-y-6">
       <div className="text-center">
         <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
-          AI & No-Code Terminology Guide
+          Non-technical Glossary for AI & No-Code Terminology
         </h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           Your comprehensive reference for understanding the language of artificial intelligence, 
