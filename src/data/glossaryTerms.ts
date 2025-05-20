@@ -6,70 +6,70 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: "ai",
     term: "Artificial Intelligence (AI)",
-    definition: "Smart computer programs that can do things humans can do, like seeing pictures, hearing words, making choices, and translating languages.",
+    definition: "Software that can perform tasks that typically require human intelligence. This includes recognizing patterns, learning from data, and making decisions. Examples include virtual assistants like Siri or Alexa, recommendation systems on Netflix, or AI that helps diagnose medical conditions from images.",
     category: "ai",
     relatedTerms: ["Machine Learning", "Deep Learning", "Neural Networks"]
   },
   {
     id: "ml",
     term: "Machine Learning",
-    definition: "When computers learn from examples just like you learn from practice, without being told exactly what to do every time.",
+    definition: "A subset of AI where systems learn from data without being explicitly programmed. It's like teaching a computer through examples rather than instructions. For instance, showing an app thousands of photos of cats and dogs allows it to learn to distinguish between them on its own.",
     category: "ai",
     relatedTerms: ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning"]
   },
   {
     id: "dl",
     term: "Deep Learning",
-    definition: "A special way computers learn by using lots of layers of information, kind of like how your brain has many layers of thinking.",
+    definition: "A more sophisticated form of machine learning using layered neural networks to process information. It's particularly good at handling complex patterns in large amounts of data. This is the technology behind voice assistants understanding your speech, facial recognition in photos, and self-driving cars interpreting their surroundings.",
     category: "ai",
     relatedTerms: ["Neural Networks", "Convolutional Neural Networks", "Recurrent Neural Networks"]
   },
   {
     id: "nn",
     term: "Neural Networks",
-    definition: "Computer systems that work a bit like the human brain, with lots of connected parts that help them learn patterns and recognize things.",
+    definition: "Computer systems inspired by the human brain's structure, made up of interconnected nodes that process information in layers. They excel at recognizing patterns and making predictions. Neural networks power everything from email spam filters to the technology that automatically tags friends in your social media photos.",
     category: "ai",
     relatedTerms: ["Neurons", "Deep Learning", "Weights"]
   },
   {
     id: "nlp",
     term: "Natural Language Processing",
-    definition: "How computers learn to understand and talk in human languages, like when you ask a smart speaker a question and it answers you.",
+    definition: "Technology that helps computers understand, interpret, and generate human language. It's what allows you to search Google in conversational language, use translation apps to communicate in foreign countries, or have chatbots help with customer service inquiries.",
     category: "ai",
     relatedTerms: ["Text Analysis", "Sentiment Analysis", "Machine Translation"]
   },
   {
     id: "llm",
     term: "Large Language Models (LLMs)",
-    definition: "Really big computer programs that have read millions of books and websites, so they can write stories, answer questions, and talk almost like a person.",
+    definition: "AI systems trained on massive amounts of text data that can understand and generate human-like text. They power modern AI assistants and can write essays, summarize documents, answer questions, and even generate creative content. Examples include ChatGPT, Google's Gemini, and Claude.",
     category: "ai",
     relatedTerms: ["GPT", "Transformer Models", "NLP"]
   },
   {
     id: "cv",
     term: "Computer Vision",
-    definition: "How computers learn to 'see' and understand pictures and videos, like when a game console can see you moving or a phone recognizes your face.",
+    definition: "AI technology that enables computers to derive meaningful information from digital images and videos. It's used in retail stores for checkout-free shopping, in healthcare for analyzing medical scans, and in manufacturing for quality control by detecting defects in products.",
     category: "ai",
     relatedTerms: ["Image Recognition", "Object Detection", "Facial Recognition"]
   },
   {
     id: "generative-ai",
     term: "Generative AI",
-    definition: "AI that can make new things like pictures, stories, songs, or videos after seeing lots of examples, like an art student who learned to paint by studying many paintings.",
+    definition: "AI systems that create new content such as text, images, music, or videos based on what they've learned. They're behind tools like DALL-E and Midjourney that create images from text descriptions, GitHub Copilot that helps write code, and AI music composers that create original songs.",
     category: "ai",
     relatedTerms: ["Diffusion Models", "GANs", "Text-to-Image"]
   },
   {
     id: "ai-agents",
     term: "AI Agents",
-    definition: "Computer programs that can look around, make decisions, and do things on their own, like a robot vacuum that cleans your house without you telling it where to go.",
+    definition: "Software programs that can perceive their environment, make decisions, and take actions to achieve specific goals with some degree of autonomy. Examples include virtual assistants managing your calendar, chatbots handling customer service, or AI systems that automatically trade stocks based on market conditions.",
     category: "ai",
     relatedTerms: ["Autonomous Systems", "Intelligent Agents", "Multi-agent Systems"]
   },
   {
     id: "mcp",
     term: "Model Context Protocol",
-    definition: "A special way for different AI systems to talk to each other and share information, like how friends use the same language to understand each other.",
+    definition: "A standardized way for different AI systems to communicate with each other by sharing information about their capabilities and requirements. It's like a common language that helps different AI tools work better together, similar to how various office applications can share documents through standard file formats.",
     category: "ai",
     relatedTerms: ["AI Interoperability", "Prompt Engineering", "Context Window"]
   },
@@ -78,49 +78,49 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: "no-code",
     term: "No-Code",
-    definition: "Tools that let you make computer programs by dragging and dropping pieces together, without having to write code, like building with LEGO bricks instead of writing instructions.",
+    definition: "Software platforms that allow people to build applications without writing code, typically through visual interfaces with drag-and-drop features. For example, a marketing manager could create a customer survey app using a no-code tool like Typeform, or a sales team could build a custom CRM dashboard using Airtable, all without involving IT or developers.",
     category: "no-code",
     relatedTerms: ["Low-Code", "Citizen Development", "Visual Development"]
   },
   {
     id: "citizen-developer",
     term: "Citizen Developer",
-    definition: "A person who makes apps to help with their work, even though that's not their main job, like a teacher who makes a game to help students learn math.",
+    definition: "A non-professional developer who creates applications using no-code or low-code tools. This might be an HR manager building an employee onboarding app, a marketing professional creating an email automation workflow, or a sales director designing a custom dashboard to track team performance.",
     category: "no-code",
     relatedTerms: ["No-Code Development", "Shadow IT", "Business User"]
   },
   {
     id: "drag-and-drop",
     term: "Drag and Drop",
-    definition: "When you can move things around on a screen just by clicking, holding, and moving your mouse, like moving a toy from one box to another.",
+    definition: "A user interface design that allows you to build software by clicking on elements and moving them into place, rather than typing code. It works like arranging furniture in a room planner app—you select what you want and place it where you need it. This is how most modern website builders and no-code tools work.",
     category: "no-code",
     relatedTerms: ["Visual Interface", "UI Builder", "Component"]
   },
   {
     id: "visual-development",
     term: "Visual Development",
-    definition: "Creating programs by putting together pictures and blocks instead of typing words, like using building blocks instead of writing down instructions.",
+    definition: "Creating software through graphical interfaces rather than by writing code. It's like designing a presentation with PowerPoint instead of coding it from scratch. Visual development tools show you what you're building as you work, allowing non-technical users to create functional apps and websites.",
     category: "no-code",
     relatedTerms: ["Visual Programming", "Visual Builder", "GUI"]
   },
   {
     id: "automation",
     term: "Automation",
-    definition: "Teaching computers to do boring, repeating jobs for you automatically, like a robot that sorts your toys while you play.",
+    definition: "Technology that performs tasks with minimal human intervention, following predefined rules. Examples include setting up automatic email responses when you're out of office, having your accounting software automatically categorize expenses, or using tools like Zapier to automatically post your blog articles to social media when published.",
     category: "no-code",
     relatedTerms: ["Workflow Automation", "Business Process Automation", "RPA"]
   },
   {
     id: "api-integration",
     term: "API Integration",
-    definition: "When two computer programs connect and share information, like when your weather app talks to the weather station to tell you if it's going to rain.",
+    definition: "Connecting different software applications to work together and share information. For example, when you use your Google account to log into a new app, that's an API integration. Or when your CRM automatically adds new customers from your online store, that's also made possible by API integrations.",
     category: "no-code",
     relatedTerms: ["Webhook", "API Connector", "Integration Platform"]
   },
   {
     id: "templates",
     term: "Templates",
-    definition: "Ready-made designs you can use as a starting point, like coloring in a picture that's already been drawn for you.",
+    definition: "Pre-designed layouts or structures that provide a starting point for creating content or applications. They're like using a cake mix instead of baking from scratch—they give you a head start and ensure consistent results. Examples include email newsletter templates, website themes, or project management board templates.",
     category: "no-code",
     relatedTerms: ["Starter Template", "Boilerplate", "Template Library"]
   },
@@ -129,49 +129,49 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: "low-code",
     term: "Low-Code",
-    definition: "A way to make computer programs with some dragging and dropping and only a little bit of typing code, like building a model that comes with some instructions but lets you add your own ideas too.",
+    definition: "Development platforms that require minimal hand-coding but allow for customization through some programming. It's like using a meal kit that comes with pre-measured ingredients but lets you adjust seasoning to taste. Low-code platforms enable faster app development while still maintaining flexibility for unique business requirements.",
     category: "low-code",
     relatedTerms: ["No-Code", "Rapid Application Development", "LCAP"]
   },
   {
     id: "lcap",
     term: "Low-Code Application Platform (LCAP)",
-    definition: "A special computer tool where you can build apps mostly by clicking and dragging, with just a little typing, like a playground with special equipment that helps you build things easily.",
+    definition: "A software environment where users can build applications using mostly visual tools but with the option to add custom code when needed. It's like using design software that has automated features but also allows for manual adjustments. Examples include Microsoft Power Apps, OutSystems, and Mendix.",
     category: "low-code",
     relatedTerms: ["Development Platform", "IDE", "Visual Development Environment"]
   },
   {
     id: "business-logic",
     term: "Business Logic",
-    definition: "The rules that tell a computer program what to do, like the rules of a board game that say how pieces can move.",
+    definition: "The rules and processes that determine how data is transformed within an application according to business requirements. For instance, the calculations that determine customer discounts, the approval steps in an expense report workflow, or the criteria for qualifying sales leads are all examples of business logic.",
     category: "low-code",
     relatedTerms: ["Workflow Rules", "Decision Logic", "Business Rules Engine"]
   },
   {
     id: "microservices",
     term: "Microservices",
-    definition: "Small, separate parts of a computer program that work together, like different LEGO sets that can be put together to build something bigger.",
+    definition: "An architectural approach where applications are built as a collection of small, independent services rather than one large program. It's like having specialized kitchen appliances (toaster, blender, etc.) instead of one multi-cooker. This makes systems more flexible and easier to update, as individual services can be modified without disrupting the entire application.",
     category: "low-code",
     relatedTerms: ["API", "Service-Oriented Architecture", "Containerization"]
   },
   {
     id: "custom-code",
     term: "Custom Code",
-    definition: "Special instructions you type to make a computer do exactly what you want, like giving detailed directions to a friend when the map doesn't show everything.",
+    definition: "Programmed instructions written specifically for a particular application or task, as opposed to using pre-built solutions. It's like having a tailor make a suit to your exact measurements rather than buying off the rack. Custom code is used when existing tools don't quite meet specific business needs or when unique functionality is required.",
     category: "low-code",
     relatedTerms: ["Code Extension", "Scripting", "Custom Functions"]
   },
   {
     id: "data-modeling",
     term: "Data Modeling",
-    definition: "Planning how to organize information in a computer, like deciding which toy bins should hold which toys and how they're related.",
+    definition: "The process of defining how data is structured, stored, and related within a system. It's similar to organizing a filing system—deciding what information goes in each folder and how folders relate to one another. Good data modeling ensures information is easily accessible and useful, like setting up customer records in a way that helps sales teams quickly find what they need.",
     category: "low-code",
     relatedTerms: ["Entity-Relationship Diagram", "Database Schema", "Data Structure"]
   },
   {
     id: "app-lifecycle",
     term: "Application Lifecycle Management",
-    definition: "Taking care of a computer program from when you first think of it until it gets old, like looking after a pet from when it's a baby until it's grown up.",
+    definition: "The continuous process of managing an application through its entire lifespan, from initial concept to retirement. This includes planning, development, testing, deployment, updates, and eventual replacement. It's similar to how organizations manage employees from recruitment through retirement, ensuring everything runs smoothly at each stage.",
     category: "low-code",
     relatedTerms: ["DevOps", "CI/CD", "Versioning"]
   },
@@ -180,14 +180,14 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     id: "api",
     term: "API (Application Programming Interface)",
-    definition: "A way for computer programs to talk to each other, like how you use a TV remote to tell your TV what to do without having to open it up.",
+    definition: "A set of rules that allows different software applications to communicate with each other. It's like a waiter in a restaurant who takes your order, delivers it to the kitchen, and brings back your food. For example, when a travel website shows you flight prices from multiple airlines without you having to visit each airline's website separately, it's using APIs.",
     category: "low-code",
     relatedTerms: ["REST API", "GraphQL", "Endpoints", "API Gateway"]
   },
   {
     id: "supabase",
     term: "Supabase",
-    definition: "A toolbox that helps you store information, let users log in, and do other things your app needs, like a magical toybox that has everything you need to build a fort.",
+    definition: "An open-source platform that provides ready-made backend services for web and mobile applications. It offers database storage, user authentication, file storage, and more without having to build these systems from scratch. It's like renting a fully furnished office instead of building one—everything you need is already set up and ready to use.",
     category: "low-code",
     relatedTerms: ["PostgreSQL", "Authentication", "Database", "Backend as a Service"]
   }
