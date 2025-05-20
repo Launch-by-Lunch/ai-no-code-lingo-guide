@@ -1,4 +1,3 @@
-
 import { GlossaryTerm } from "@/components/GlossaryCard";
 
 export const glossaryTerms: GlossaryTerm[] = [
@@ -190,5 +189,56 @@ export const glossaryTerms: GlossaryTerm[] = [
     definition: "An open-source platform that provides ready-made backend services for web and mobile applications. It offers database storage, user authentication, file storage, and more without having to build these systems from scratch. It's like renting a fully furnished office instead of building one—everything you need is already set up and ready to use.",
     category: "low-code",
     relatedTerms: ["PostgreSQL", "Authentication", "Database", "Backend as a Service"]
+  },
+  
+  // New Technical Terms
+  {
+    id: "framework",
+    term: "Framework",
+    definition: "A pre-built structure that provides a foundation for developing software applications. It's like using a house blueprint that already has the foundation, walls, and roof designed—you just need to customize the interior. Examples include React for building user interfaces or Express for creating web applications. Frameworks save time and ensure consistent quality by handling common development challenges.",
+    category: "low-code",
+    relatedTerms: ["Library", "API", "React", "Front-end", "Back-end"]
+  },
+  {
+    id: "library",
+    term: "Library",
+    definition: "A collection of pre-written code that developers can use to perform common tasks. It's similar to using ready-made furniture pieces instead of building everything from scratch. For example, when a website needs to display charts, developers can use a charting library rather than programming the visualization from zero. Libraries help speed up development and maintain consistent functionality.",
+    category: "low-code",
+    relatedTerms: ["Framework", "API", "Code Reusability"]
+  },
+  {
+    id: "client-facing",
+    term: "Client-facing",
+    definition: "The parts of an application that users directly interact with and see. It's like the dining area of a restaurant—it's designed for customer experience, while all the cooking happens elsewhere. Client-facing elements include the screens, buttons, forms, and visual layouts that make up the user interface. These elements focus on user experience, visual appeal, and ease of use.",
+    category: "low-code",
+    relatedTerms: ["Front-end", "User Interface", "User Experience"]
+  },
+  {
+    id: "back-end",
+    term: "Back-end",
+    definition: "The behind-the-scenes part of software that handles operations users don't see. It's like the kitchen in a restaurant—customers don't see it, but it's where all the important preparation happens. The back-end includes servers, databases, and application logic that process information, store data, and ensure everything works correctly. When you save information in an app, it's the back-end that securely stores it.",
+    category: "low-code",
+    relatedTerms: ["Server", "Database", "API", "Cloud Computing"]
+  },
+  {
+    id: "front-end",
+    term: "Front-end",
+    definition: "The visible part of a website or application that users interact with directly. It's everything you see and click on—like buttons, images, text, and forms. Think of it as the interior design of a house that everyone experiences, while the electrical wiring and plumbing (back-end) remain hidden in the walls. Front-end focuses on making applications visually appealing and easy to use.",
+    category: "low-code",
+    relatedTerms: ["User Interface", "Client-facing", "Web Design", "HTML/CSS"]
+  },
+  {
+    id: "database",
+    term: "Database",
+    definition: "A structured collection of information that's organized so it can be easily accessed and managed. It's like a digital filing cabinet where all important information is stored. For example, when you place an online order, your customer details, product selections, and payment information are all stored in a database. Databases allow applications to remember information between visits and provide personalized experiences.",
+    category: "low-code",
+    relatedTerms: ["SQL", "Data Storage", "Back-end", "Cloud Storage"]
+  },
+  {
+    id: "rls",
+    term: "Row-level Security",
+    definition: "A feature that controls which rows of data a user can access in a database based on their identity or role. It's like having different access cards in an office building—some people can only enter certain rooms while others have broader access. For example, in a company app, row-level security ensures employees only see their own HR records, while managers can view records for their entire team. This provides fine-grained control over who can see or modify specific information.",
+    category: "low-code",
+    relatedTerms: ["Database", "Security", "Data Privacy", "Access Control"]
   }
 ];
