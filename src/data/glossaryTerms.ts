@@ -240,5 +240,42 @@ export const glossaryTerms: GlossaryTerm[] = [
     definition: "A feature that controls which rows of data a user can access in a database based on their identity or role. It's like having different access cards in an office building—some people can only enter certain rooms while others have broader access. For example, in a company app, row-level security ensures employees only see their own HR records, while managers can view records for their entire team. This provides fine-grained control over who can see or modify specific information.",
     category: "low-code",
     relatedTerms: ["Database", "Security", "Data Privacy", "Access Control"]
+  },
+  
+  // Additional Development Terms
+  {
+    id: "redux",
+    term: "Redux",
+    definition: "A tool that helps manage information across an entire application, like a central control room. It's similar to how a company might have a central database that all departments can access. Redux stores all important data in one place so different parts of your app can use it without confusion or inconsistencies. For example, an e-commerce app might use Redux to track the shopping cart contents across all pages.",
+    category: "low-code",
+    relatedTerms: ["State Management", "React", "Global State", "Store"]
+  },
+  {
+    id: "react",
+    term: "React",
+    definition: "A popular tool for building user interfaces that makes websites interactive and responsive. It's like a set of building blocks that lets you create reusable pieces (called components) and assemble them into complete pages. For instance, a social media feed might have a 'post component' that gets reused for every post you see. React makes it easier to build complex interfaces that update instantly when users interact with them.",
+    category: "low-code",
+    relatedTerms: ["Component", "Front-end", "JavaScript", "User Interface"]
+  },
+  {
+    id: "public-routes",
+    term: "Public Routes",
+    definition: "Sections of an application that anyone can access without signing in. They're like the public areas of a building—the lobby, reception, or information desk that visitors can enter freely. Examples include the home page, login page, about page, or pricing information of a web application. These areas show general information and encourage users to sign up or log in.",
+    category: "low-code",
+    relatedTerms: ["Private Routes", "Authentication", "User Access", "Navigation"]
+  },
+  {
+    id: "private-routes",
+    term: "Private Routes",
+    definition: "Sections of an application that require users to log in before they can access them. It's like areas in a building that need a keycard to enter. For example, in a project management tool, your personal dashboard, team workspaces, or account settings would all be private routes. They contain sensitive or personalized information that should only be available to authenticated users.",
+    category: "low-code",
+    relatedTerms: ["Public Routes", "Authentication", "User Access", "Security"]
+  },
+  {
+    id: "local-storage",
+    term: "Local Storage",
+    definition: "A way for websites to save information directly on your computer or device. It's like having a small filing cabinet in your browser that websites can use to remember things between visits. For example, an online shopping site might use local storage to remember items in your cart even if you close the browser, or a news site might remember your reading preferences. This data stays on your device until explicitly cleared, making your web experience more personalized.",
+    category: "low-code",
+    relatedTerms: ["Cookies", "Browser Storage", "Data Persistence", "Client-side Storage"]
   }
 ];
